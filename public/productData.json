@@ -1,0 +1,197 @@
+[
+  {
+    "id": "h1",
+    "title": "Wireless Over-Ear Headphones",
+    "price": 79.99,
+    "thumbnail": "https://i.ibb.co/VT94Vks/pink-headphones-wireless-digital-device.jpg",
+    "short_features": "Bluetooth, Noise Cancelling",
+    "short_description": "Immerse yourself in music with these wireless headphones.",
+    "rating": 4.5,
+    "total_rating": 1285,
+    "stock_quantity": 25,
+    "images": [
+      "https://example.com/headphone1_1.jpg",
+      "https://example.com/headphone1_2.jpg",
+      "https://example.com/headphone1_3.jpg"
+    ]
+  },
+  {
+    "id": "h11",
+    "title": "Open-Back Audiophile Headphones",
+    "price": 199.99,
+    "thumbnail": "https://i.ibb.co/TW0Nwb8/black-wireless-earbud-with-charging-case.jpg",
+    "short_features": "Natural Sound, Breathable Design",
+    "short_description": "Get the best audio experience with these high-end open-back headphones.",
+    "rating": 4.8,
+    "total_rating": 2157,
+    "stock_quantity": 3,
+    "images": [
+      "https://example.com/headphone11_1.jpg",
+      "https://example.com/headphone11_2.jpg",
+      "https://example.com/headphone11_3.jpg"
+    ]
+  },
+
+  {
+    "id": "h6",
+    "title": "Wireless On-Ear Headphones",
+    "price": 89.99,
+    "thumbnail": "https://i.ibb.co/sqyRzwq/jordi-zamora-XNvt8-Ts-XOho-unsplash.jpg",
+    "short_features": "Bluetooth, Foldable",
+    "short_description": "Stay connected on the go with these stylish wireless on-ear headphones.",
+    "rating": 4.2,
+    "total_rating": 920,
+    "stock_quantity": 30,
+    "images": [
+      "https://example.com/headphone6_1.jpg",
+      "https://example.com/headphone6_2.jpg",
+      "https://example.com/headphone6_3.jpg"
+    ]
+  },
+  {
+    "id": "h7",
+    "title": "Bass-Boosting Headphones",
+    "price": 49.99,
+    "thumbnail": "https://i.ibb.co/3dcmqMm/c-d-x-PDX-a-82obo-unsplash.jpg",
+    "short_features": "Enhanced Bass, Adjustable Headband",
+    "short_description": "Feel the music with deep bass and a comfortable fit with these headphones.",
+    "rating": 4.1,
+    "total_rating": 832,
+    "stock_quantity": 8,
+    "images": [
+      "https://example.com/headphone7_1.jpg",
+      "https://example.com/headphone7_2.jpg",
+      "https://example.com/headphone7_3.jpg"
+    ]
+  },
+  {
+    "id": "h3",
+    "title": "On-Ear Hi-Fi Headphones",
+    "price": 129.99,
+    "thumbnail": "https://i.ibb.co/rQm3NhJ/cool-earphones-with-blue-background.jpg",
+    "short_features": "Hi-Res Audio, Comfortable",
+    "short_description": "Enjoy crystal-clear audio and long listening sessions with these on-ear headphones.",
+    "rating": 4.8,
+    "total_rating": 1893,
+    "stock_quantity": 12,
+    "images": [
+      "https://example.com/headphone3_1.jpg",
+      "https://example.com/headphone3_2.jpg",
+      "https://example.com/headphone3_3.jpg"
+    ]
+  },
+  {
+    "id": "h4",
+    "title": "Noise-Cancelling Earbuds",
+    "price": 89.99,
+    "thumbnail": "https://i.ibb.co/bb8r3fp/29171494-m506t0001-earbuds-12june22-03.jpg",
+    "short_features": "Active Noise Cancellation, Wireless",
+    "short_description": "Block out distractions and focus on your music with these noise-cancelling earbuds.",
+    "rating": 4.3,
+    "total_rating": 1095,
+    "stock_quantity": 20,
+    "images": [
+      "https://example.com/headphone4_1.jpg",
+      "https://example.com/headphone4_2.jpg",
+      "https://example.com/headphone4_3.jpg"
+    ]
+  },
+  {
+    "id": "h5",
+    "title": "Gaming Headset",
+    "price": 69.99,
+    "thumbnail": "https://i.ibb.co/vkyKW3z/black-headphones-digital-device.jpg",
+    "short_features": "Virtual Surround Sound, Noise Isolation",
+    "short_description": "Immerse yourself in the gaming world with this comfortable gaming headset.",
+    "rating": 4.6,
+    "total_rating": 1532,
+    "stock_quantity": 15,
+    "images": [
+      "https://example.com/headphone5_1.jpg",
+      "https://example.com/headphone5_2.jpg",
+      "https://example.com/headphone5_3.jpg"
+    ]
+  },
+
+  {
+    "id": "h8",
+    "title": "True Wireless Earbuds",
+    "price": 129.99,
+    "thumbnail": "https://i.ibb.co/pdjZm64/earphones-with-case-surrounded-by-nature-scene.jpg",
+    "short_features": "Waterproof, Touch Controls",
+    "short_description": "Experience true freedom with these completely wireless earbuds.",
+    "rating": 4.7,
+    "total_rating": 2010,
+    "stock_quantity": 10,
+    "images": [
+      "https://example.com/headphone8_1.jpg",
+      "https://example.com/headphone8_2.jpg",
+      "https://example.com/headphone8_3.jpg"
+    ]
+  },
+  {
+    "id": "h9",
+    "title": "Studio Monitor Headphones",
+    "price": 149.99,
+    "thumbnail": "https://i.ibb.co/BqBJ4ns/working-process-night-musician-is-creating-music-night.jpg",
+    "short_features": "Accurate Sound Reproduction, Noise-Isolating",
+    "short_description": "Perfect for audio professionals, these headphones deliver precise sound.",
+    "rating": 4.9,
+    "total_rating": 1705,
+    "stock_quantity": 5,
+    "images": [
+      "https://example.com/headphone9_1.jpg",
+      "https://example.com/headphone9_2.jpg",
+      "https://example.com/headphone9_3.jpg"
+    ]
+  },
+  {
+    "id": "h10",
+    "title": "Wireless Neckband Earphones",
+    "price": 59.99,
+    "thumbnail": "https://i.ibb.co/Vx6WbP7/wireless-earphones-smartphone-cup-coffee.jpg",
+    "short_features": "Long Battery Life, Magnetic Earbuds",
+    "short_description": "Enjoy music on the move with these comfortable neckband earphones.",
+    "rating": 4.4,
+    "total_rating": 1050,
+    "stock_quantity": 22,
+    "images": [
+      "https://example.com/headphone10_1.jpg",
+      "https://example.com/headphone10_2.jpg",
+      "https://example.com/headphone10_3.jpg"
+    ]
+  },
+  {
+    "id": "h2",
+    "title": "In-Ear Sports Earbuds",
+    "price": 39.99,
+    "thumbnail": "https://i.ibb.co/fpr23z3/closeup-shot-white-wireless-headphones-with-their-case-white-background.jpg",
+    "short_features": "Sweatproof, Secure Fit",
+    "short_description": "Designed for active lifestyles, these earbuds stay in place during workouts.",
+    "rating": 4.0,
+    "total_rating": 740,
+    "stock_quantity": 18,
+    "images": [
+      "https://example.com/headphone2_1.jpg",
+      "https://example.com/headphone2_2.jpg",
+      "https://example.com/headphone2_3.jpg"
+    ]
+  },
+
+  {
+    "id": "h12",
+    "title": "Sports Wireless Earbuds",
+    "price": 44.99,
+    "thumbnail": "https://i.ibb.co/hss09mc/wireless-inear-headphones-with-case-pink-background-flat-lay.jpg",
+    "short_features": "Secure Fit, Sweat-resistant",
+    "short_description": "Enjoy music during workouts with these durable sports wireless earbuds.",
+    "rating": 4.3,
+    "total_rating": 981,
+    "stock_quantity": 17,
+    "images": [
+      "https://example.com/headphone12_1.jpg",
+      "https://example.com/headphone12_2.jpg",
+      "https://example.com/headphone12_3.jpg"
+    ]
+  }
+]
