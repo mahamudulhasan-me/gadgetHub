@@ -26,6 +26,7 @@ const SingleProduct = () => {
     stock_quantity,
   } = product;
   const [displayImage, setDisplayImage] = useState(images);
+
   console.log(product);
   useEffect(() => {
     fetch("../productData.json")
@@ -50,7 +51,11 @@ const SingleProduct = () => {
       </p>
       <div className="grid grid-cols-2 mt-5 gap-14">
         <figure>
-          <img className="h-96 w-full" src={displayImage} alt="" />
+          <img
+            className="h-96 w-full"
+            src={displayImage ? displayImage : images}
+            alt=""
+          />
           <div className="grid grid-cols-4 gap-4 mt-5 items-stretch">
             {images?.map((image) => (
               <img
