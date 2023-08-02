@@ -6,3 +6,9 @@
 body {
   @apply max-w-[1920px] font-ubuntu;
 }
+h1 {
+  @apply text-gray-700 font-medium;
+}
+.color-pallet img {
+  @apply rounded-full border-2 hover:border-primaryColor;
+}

@@ -1,11 +1,13 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import OfferCard from "../components/OfferCard";
 import Header from "../shared/Header";
 
 const Main = () => {
+  const location = useLocation();
+  const offer = true;
   return (
     <div>
-      <OfferCard />
+      {location.pathname === "/" && offer && <OfferCard />}
       <Header />
       <Outlet />
     </div>

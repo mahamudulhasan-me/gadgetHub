@@ -26,14 +26,14 @@ const Header = () => {
     </>
   );
   return (
-    <header className="px-[10%]  py-5">
-      <div className="flex justify-between items-center">
-        <div className="flex items-center gap-2">
+    <header className="w-4/5 mx-auto  py-5  border-b border-[#FBF0E4]">
+      <div className="flex justify-between items-center ">
+        <Link to={"/"} className="flex items-center gap-2">
           <img className="w-16" src={logo} alt="" />{" "}
           <h1 className="text-primaryColor font-semibold text-3xl ">
             ShopCard
           </h1>
-        </div>
+        </Link>
         <nav>
           <ul className="flex gap-5 items-center font-medium text-gray-700">
             {navItems}
