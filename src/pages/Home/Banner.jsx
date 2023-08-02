@@ -1,9 +1,9 @@
 import React from "react";
-import bannerImg from "../../assets/banner-img.jpg";
+import bannerImg from "../../assets/banner-img.png";
 import BuyBtn from "../../components/BuyBtn";
 const Banner = () => {
   return (
-    <div className="bg-[#FBFBFB] flex justify-between items-center">
+    <div className="bg-[#FBF0E4] flex justify-between items-center">
       <div className="ml-24">
         <h1 className="text-4xl text-primaryColor font-semibold mb-5">
           Grab Upto 50% Off On <br /> Selected Products
