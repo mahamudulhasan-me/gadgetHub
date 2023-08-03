@@ -4,6 +4,7 @@ import ProductCard from "../../shared/ProductCard";
 
 const AllProduct = () => {
   const [products, setProducts] = useState([]);
+  const [category, setCategory] = useState("");
 
   useEffect(() => {
     fetch(`productData.json`)
@@ -11,8 +12,14 @@ const AllProduct = () => {
       .then((data) => setProducts(data));
   }, []);
 
-  console.log(products);
-
+  const productByCategory = (e) => {
+    const category = e.target.value;
+    const filterByCategory = products.filter((product) =>
+      product.category.map((cat) => cat.includes(category))
+    );
+    console.log(filterByCategory);
+    setProducts(filterByCategory);
+  };
   return (
     <div className="mb-20">
       <div className="flex justify-between items-center my-12">
@@ -22,6 +29,7 @@ const AllProduct = () => {
           <select
             name="category"
             id=""
+            onChange={productByCategory}
             className="border rounded-3xl py-1 px-2 outline-primaryColor bg-[#EBEDED]"
           >
             <option value="n/a">Headphone Type</option>
