@@ -1,12 +1,14 @@
 import React from "react";
 import AllProduct from "./AllProduct";
 import Banner from "./Banner";
+import GameProduct from "./GameProduct";
 
 const Home = () => {
   return (
-    <div className="w-4/5 mx-auto">
+    <div>
       <Banner />
       <AllProduct />
+      <GameProduct />
     </div>
   );
 };

@@ -41,7 +41,7 @@ const AllProduct = () => {
   };
 
   return (
-    <div className="mb-20">
+    <div className="mb-10 px-[10%]">
       <div className="flex justify-between items-center my-12">
         {/* filter section  */}
         <div className="flex items-center gap-3 font-medium text-gray-700">

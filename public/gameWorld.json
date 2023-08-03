@@ -1,0 +1,30 @@
+[
+  {
+    "id": "g1",
+    "title": "Xoggle aute et pariatur adipisicing nostrud et excepteur",
+    "price": 79.99,
+    "thumbnail": "./img/product-img-1.jpg",
+    "rating": 4.5,
+    "total_rating": 120,
+    "stock_quantity": 25
+  },
+  {
+    "id": "g2",
+    "title": "Geeky ipsum esse repreh est consequat",
+    "price": 66.99,
+    "thumbnail": "./img/product-img-2.jpg",
+    "rating": 4,
+    "total_rating": 129,
+    "stock_quantity": 25
+  },
+  {
+    "id": "g3",
+    "title": "Conjurica ea magna eiusmod esse cupt anim aliquip",
+    "price": 80.99,
+    "thumbnail": "./img/product-img-3.jpg",
+    "rating": 5,
+    "total_rating": 150,
+    "stock_quantity": 10,
+    "popular": "yes"
+  }
+]
