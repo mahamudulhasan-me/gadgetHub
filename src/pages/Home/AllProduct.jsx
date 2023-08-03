@@ -7,6 +7,7 @@ const AllProduct = () => {
   const [category, setCategory] = useState("");
   const [originalProducts, setOriginalProducts] = useState([]);
 
+  // fetch data from public
   useEffect(() => {
     fetch(`productData.json`)
       .then((res) => res.json())
@@ -16,6 +17,7 @@ const AllProduct = () => {
       });
   }, []);
 
+  // handle category
   const productByCategory = (e) => {
     const category = e.target.value;
     if (category === "n/a") {
@@ -130,7 +132,7 @@ const AllProduct = () => {
             name="sort"
             id=""
             onChange={handleSorting}
-            className="border rounded-3xl py-1 px-2 outline-primaryColor"
+            className="border rounded-3xl py-1 px-2 outline-primaryColor font-medium text-gray-700"
           >
             <option value="">Sort by</option>
             <option value="price">Price</option>
@@ -138,12 +140,16 @@ const AllProduct = () => {
           </select>
         </div>
       </div>
+
+      {/* here show all products  */}
       <h1 className="text-2xl my-5">Headphones For Your</h1>
-      <div className="md:grid grid-cols-4 gap-6 space-y-4 md:space-y-4">
+
+      <div className="md:grid grid-cols-4 gap-6 space-y-4 md:space-y-0">
         {products.map((product) => (
           <ProductCard product={product} key={product.id} />
         ))}
       </div>
+      {/* see more button   */}
       <div className="w-40 mx-auto mt-8">
         <button className="bg-primaryColor text-white w-full py-3 rounded-3xl">
           See More
