@@ -25,7 +25,7 @@ const SingleProduct = () => {
     images,
     stock_quantity,
   } = product;
-  const [displayImage, setDisplayImage] = useState(images);
+  const [displayImage, setDisplayImage] = useState(thumbnail);
 
   console.log(product);
   useEffect(() => {
@@ -53,7 +53,7 @@ const SingleProduct = () => {
         <figure>
           <img
             className="h-96 w-full"
-            src={displayImage ? displayImage : images}
+            src={displayImage ? displayImage : thumbnail}
             alt=""
           />
           <div className="grid grid-cols-4 gap-4 mt-5 items-stretch">
@@ -70,9 +70,9 @@ const SingleProduct = () => {
         <div className="space-y-5">
           <div>
             <h1 className="text-3xl">{title}</h1>
-            <p>{short_description}</p>
+            <p className="text-gray-500">{short_description}</p>
             <h1>Features:</h1>
-            <p className="text-sm mb-2">{short_features}</p>
+            <p className="text-sm mb-2 text-gray-500">{short_features}</p>
             <p className="flex">
               <Rating
                 style={{ maxWidth: 100 }}
@@ -85,7 +85,7 @@ const SingleProduct = () => {
           </div>
           <div>
             <h1 className="text-3xl font-semibold">${price} or $19.99/month</h1>
-            <p className="text-sm text-gray-600">
+            <p className="text-sm text-gray-500">
               Suggested payments with 5 months special financing
             </p>
           </div>
