@@ -9,11 +9,12 @@
     "rating": 4.5,
     "total_rating": 1285,
     "stock_quantity": 25,
-    "category": ["over-ear", "on-ear"],
+    "category": "over-ear",
     "images": [
-      "https://example.com/headphone1_1.jpg",
-      "https://example.com/headphone1_2.jpg",
-      "https://example.com/headphone1_3.jpg"
+      "https://i.ibb.co/hss09mc/wireless-inear-headphones-with-case-pink-background-flat-lay.jpg",
+      "https://i.ibb.co/vxV9DyZ/dj-equipment.jpg",
+      "https://i.ibb.co/jkt047H/headphones-near-crop-amplifier.jpg",
+      "https://i.ibb.co/47P7w6T/5921866-20763.jpg"
     ]
   },
   {
@@ -26,11 +27,12 @@
     "rating": 4.8,
     "total_rating": 2157,
     "stock_quantity": 3,
-    "category": ["noise-canceling", "sports"],
+    "category": "noise-canceling",
     "images": [
-      "https://example.com/headphone11_1.jpg",
-      "https://example.com/headphone11_2.jpg",
-      "https://example.com/headphone11_3.jpg"
+      "https://i.ibb.co/BqBJ4ns/working-process-night-musician-is-creating-music-night.jpg",
+      "https://i.ibb.co/vc4RsJp/music-arrangement-with-black-headphones.jpg",
+      "https://i.ibb.co/MD8yjTG/3998721-14416.jpg",
+      "https://i.ibb.co/pdjZm64/earphones-with-case-surrounded-by-nature-scene.jpg"
     ]
   },
 
@@ -44,11 +46,12 @@
     "rating": 4.2,
     "total_rating": 920,
     "stock_quantity": 30,
-    "category": ["over-ear"],
+    "category": "over-ear",
     "images": [
-      "https://example.com/headphone6_1.jpg",
-      "https://example.com/headphone6_2.jpg",
-      "https://example.com/headphone6_3.jpg"
+      "https://i.ibb.co/bb8r3fp/29171494-m506t0001-earbuds-12june22-03.jpg",
+      "https://i.ibb.co/vkyKW3z/black-headphones-digital-device.jpg",
+      "https://i.ibb.co/sqyRzwq/jordi-zamora-XNvt8-Ts-XOho-unsplash.jpg",
+      "https://i.ibb.co/3dcmqMm/c-d-x-PDX-a-82obo-unsplash.jpg"
     ]
   },
   {
@@ -61,11 +64,12 @@
     "rating": 4.1,
     "total_rating": 832,
     "stock_quantity": 8,
-    "category": ["sports"],
+    "category": "sports",
     "images": [
-      "https://example.com/headphone7_1.jpg",
-      "https://example.com/headphone7_2.jpg",
-      "https://example.com/headphone7_3.jpg"
+      "https://i.ibb.co/VT94Vks/pink-headphones-wireless-digital-device.jpg",
+      "https://i.ibb.co/fpr23z3/closeup-shot-white-wireless-headphones-with-their-case-white-background.jpg",
+      "https://i.ibb.co/rQm3NhJ/cool-earphones-with-blue-background.jpg",
+      "https://i.ibb.co/bb8r3fp/29171494-m506t0001-earbuds-12june22-03.jpg"
     ]
   },
   {
@@ -78,11 +82,12 @@
     "rating": 4.8,
     "total_rating": 1893,
     "stock_quantity": 12,
-    "category": ["noise-canceling"],
+    "category": "noise-canceling",
     "images": [
-      "https://example.com/headphone3_1.jpg",
-      "https://example.com/headphone3_2.jpg",
-      "https://example.com/headphone3_3.jpg"
+      "https://i.ibb.co/VT94Vks/pink-headphones-wireless-digital-device.jpg",
+      "https://i.ibb.co/fpr23z3/closeup-shot-white-wireless-headphones-with-their-case-white-background.jpg",
+      "https://i.ibb.co/rQm3NhJ/cool-earphones-with-blue-background.jpg",
+      "https://i.ibb.co/bb8r3fp/29171494-m506t0001-earbuds-12june22-03.jpg"
     ]
   },
   {
@@ -95,11 +100,12 @@
     "rating": 4.3,
     "total_rating": 1095,
     "stock_quantity": 20,
-    "category": ["on-ear"],
+    "category": "on-ear",
     "images": [
-      "https://example.com/headphone4_1.jpg",
-      "https://example.com/headphone4_2.jpg",
-      "https://example.com/headphone4_3.jpg"
+      "https://i.ibb.co/vkyKW3z/black-headphones-digital-device.jpg",
+      "https://i.ibb.co/sqyRzwq/jordi-zamora-XNvt8-Ts-XOho-unsplash.jpg",
+      "https://i.ibb.co/3dcmqMm/c-d-x-PDX-a-82obo-unsplash.jpg",
+      "https://i.ibb.co/pdjZm64/earphones-with-case-surrounded-by-nature-scene.jpg"
     ]
   },
   {
@@ -112,11 +118,12 @@
     "rating": 4.6,
     "total_rating": 1532,
     "stock_quantity": 15,
-    "category": ["on-ear", "earbuds"],
+    "category": "earbuds",
     "images": [
-      "https://example.com/headphone5_1.jpg",
-      "https://example.com/headphone5_2.jpg",
-      "https://example.com/headphone5_3.jpg"
+      "https://i.ibb.co/BqBJ4ns/working-process-night-musician-is-creating-music-night.jpg",
+      "https://i.ibb.co/vc4RsJp/music-arrangement-with-black-headphones.jpg",
+      "https://i.ibb.co/MD8yjTG/3998721-14416.jpg",
+      "https://i.ibb.co/hss09mc/wireless-inear-headphones-with-case-pink-background-flat-lay.jpg"
     ]
   },
 
@@ -130,11 +137,12 @@
     "rating": 4.7,
     "total_rating": 2010,
     "stock_quantity": 10,
-    "category": ["earbuds", "noise-canceling", "sports"],
+    "category": "sports",
     "images": [
-      "https://example.com/headphone8_1.jpg",
-      "https://example.com/headphone8_2.jpg",
-      "https://example.com/headphone8_3.jpg"
+      "https://i.ibb.co/hss09mc/wireless-inear-headphones-with-case-pink-background-flat-lay.jpg",
+      "https://i.ibb.co/vxV9DyZ/dj-equipment.jpg",
+      "https://i.ibb.co/jkt047H/headphones-near-crop-amplifier.jpg",
+      "https://i.ibb.co/47P7w6T/5921866-20763.jpg"
     ]
   },
   {
@@ -147,11 +155,12 @@
     "rating": 4.9,
     "total_rating": 1705,
     "stock_quantity": 5,
-    "category": ["on-ear", "earbuds"],
+    "category": "on-ear",
     "images": [
-      "https://example.com/headphone9_1.jpg",
-      "https://example.com/headphone9_2.jpg",
-      "https://example.com/headphone9_3.jpg"
+      "https://i.ibb.co/BqBJ4ns/working-process-night-musician-is-creating-music-night.jpg",
+      "https://i.ibb.co/vc4RsJp/music-arrangement-with-black-headphones.jpg",
+      "https://i.ibb.co/MD8yjTG/3998721-14416.jpg",
+      "https://i.ibb.co/hss09mc/wireless-inear-headphones-with-case-pink-background-flat-lay.jpg"
     ]
   },
   {
@@ -164,7 +173,7 @@
     "rating": 4.4,
     "total_rating": 1050,
     "stock_quantity": 22,
-    "category": ["noise-canceling", "sports"],
+    "category": "sports",
     "images": [
       "https://i.ibb.co/pdjZm64/earphones-with-case-surrounded-by-nature-scene.jpg",
       "https://i.ibb.co/BqBJ4ns/working-process-night-musician-is-creating-music-night.jpg",
@@ -182,11 +191,12 @@
     "rating": 4.0,
     "total_rating": 740,
     "stock_quantity": 18,
-    "category": ["sports"],
+    "category": "sports",
     "images": [
-      "https://example.com/headphone2_1.jpg",
-      "https://example.com/headphone2_2.jpg",
-      "https://example.com/headphone2_3.jpg"
+      "https://i.ibb.co/bb8r3fp/29171494-m506t0001-earbuds-12june22-03.jpg",
+      "https://i.ibb.co/vkyKW3z/black-headphones-digital-device.jpg",
+      "https://i.ibb.co/sqyRzwq/jordi-zamora-XNvt8-Ts-XOho-unsplash.jpg",
+      "https://i.ibb.co/3dcmqMm/c-d-x-PDX-a-82obo-unsplash.jpg"
     ]
   },
 
@@ -200,11 +210,12 @@
     "rating": 4.3,
     "total_rating": 981,
     "stock_quantity": 17,
-    "category": ["noise-canceling", "sports"],
+    "category": "noise-canceling",
     "images": [
-      "https://example.com/headphone12_1.jpg",
-      "https://example.com/headphone12_2.jpg",
-      "https://example.com/headphone12_3.jpg"
+      "https://i.ibb.co/vc4RsJp/music-arrangement-with-black-headphones.jpg",
+      "https://i.ibb.co/MD8yjTG/3998721-14416.jpg",
+      "https://i.ibb.co/hss09mc/wireless-inear-headphones-with-case-pink-background-flat-lay.jpg",
+      "https://i.ibb.co/vxV9DyZ/dj-equipment.jpg"
     ]
   }
 ]

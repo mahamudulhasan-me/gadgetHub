@@ -5,27 +5,48 @@ import ProductCard from "../../shared/ProductCard";
 const AllProduct = () => {
   const [products, setProducts] = useState([]);
   const [category, setCategory] = useState("");
+  const [originalProducts, setOriginalProducts] = useState([]);
 
   useEffect(() => {
     fetch(`productData.json`)
       .then((res) => res.json())
-      .then((data) => setProducts(data));
+      .then((data) => {
+        setProducts(data);
+        setOriginalProducts(data); // Set the original products data here
+      });
   }, []);
 
   const productByCategory = (e) => {
     const category = e.target.value;
-    const filterByCategory = products.filter((product) =>
-      product.category.map((cat) => cat.includes(category))
-    );
-    console.log(filterByCategory);
-    setProducts(filterByCategory);
+    if (category === "n/a") {
+      // If the selected category is "n/a", show all products
+      setProducts(originalProducts);
+    } else {
+      const filterByCategory = originalProducts.filter(
+        (product) => product.category === category
+      );
+      setProducts(filterByCategory);
+    }
   };
+  // handle sorting
+  const handleSorting = (e) => {
+    const sorting = e.target.value;
+    if (sorting === "price") {
+      const sorted = [...products].sort((a, b) => a.price - b.price);
+      setProducts(sorted);
+    } else if (sorting === "rating") {
+      const sorted = [...products].sort((a, b) => b.rating - a.rating);
+      setProducts(sorted);
+    }
+  };
+
   return (
     <div className="mb-20">
       <div className="flex justify-between items-center my-12">
         {/* filter section  */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 font-medium text-gray-700">
           {/* category select option  */}
+
           <select
             name="category"
             id=""
@@ -103,10 +124,12 @@ const AllProduct = () => {
             <FaTasks />
           </button>
         </div>
+        {/* sort by select option  */}
         <div>
           <select
             name="sort"
             id=""
+            onChange={handleSorting}
             className="border rounded-3xl py-1 px-2 outline-primaryColor"
           >
             <option value="">Sort by</option>
@@ -118,7 +141,7 @@ const AllProduct = () => {
       <h1 className="text-2xl my-5">Headphones For Your</h1>
       <div className="grid grid-cols-4 gap-6">
         {products.map((product) => (
-          <ProductCard product={product} id={product.id} />
+          <ProductCard product={product} key={product.id} />
         ))}
       </div>
       <div className="w-40 mx-auto mt-8">
