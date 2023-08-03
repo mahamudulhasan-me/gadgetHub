@@ -21,9 +21,9 @@ const GameProduct = () => {
           View More <HiArrowRight className="animate-pulse" />
         </Link>
       </div>
-      <div className="flex justify-between items-center gap-8">
+      <div className="md:flex justify-between items-center gap-8">
         <figure className="relative">
-          <img src={gameSiteImg} alt="" />
+          <img className="w-full mx-auto" src={gameSiteImg} alt="" />
           <div className="absolute top-0 left-0 w-full h-full p-5">
             <h1>Mobile & Tablet</h1>
             <ul className="mobile">
@@ -36,7 +36,7 @@ const GameProduct = () => {
             </Link>
           </div>
         </figure>
-        <div className="grid grid-cols-3 w-full gap-8">
+        <div className="md:grid grid-cols-3 w-full gap-8 space-y-4 md:space-y-0">
           {gameProducts.map((product) => (
             <GameProductCard product={product} key={product.id} />
           ))}

@@ -40,7 +40,7 @@ const GameProductCard = ({ product }) => {
         />
         <p className="font-medium text-gray-700">{title.slice(0, 50)}...</p>
         <h1 className="text-2xl font-medium">
-          <del>${price}</del>{" "}
+          <del>${price}</del>
           <span className="text-primaryColor">${parseInt(price - 10)}</span>
         </h1>
       </div>

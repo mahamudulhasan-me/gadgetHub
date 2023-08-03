@@ -44,7 +44,7 @@ const AllProduct = () => {
     <div className="mb-10 px-[10%]">
       <div className="flex justify-between items-center my-12">
         {/* filter section  */}
-        <div className="flex items-center gap-3 font-medium text-gray-700">
+        <div className="flex flex-wrap items-center gap-3 font-medium text-gray-700">
           {/* category select option  */}
 
           <select
@@ -139,7 +139,7 @@ const AllProduct = () => {
         </div>
       </div>
       <h1 className="text-2xl my-5">Headphones For Your</h1>
-      <div className="grid grid-cols-4 gap-6">
+      <div className="md:grid grid-cols-4 gap-6 space-y-4 md:space-y-4">
         {products.map((product) => (
           <ProductCard product={product} key={product.id} />
         ))}

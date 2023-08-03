@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { FaCartPlus, FaSearch, FaUser } from "react-icons/fa";
+import { HiMenuAlt1 } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 const Header = () => {
+  const [activeResMenu, setActiveResMenu] = useState(false);
   const navItems = (
     <>
       <li>
@@ -28,18 +31,33 @@ const Header = () => {
   return (
     <header className="w-4/5 mx-auto  py-5  border-b border-[#FBF0E4]">
       <div className="flex justify-between items-center ">
-        <Link to={"/"} className="flex items-center gap-2">
-          <img className="w-16" src={logo} alt="" />{" "}
+        <Link to={"/"} className="md:flex hidden items-center gap-2">
+          <img className="w-16 " src={logo} alt="" />{" "}
           <h1 className="text-primaryColor font-semibold text-3xl ">
             ShopCard
           </h1>
         </Link>
+        {/* responsive menu  */}
+        <nav className="relative md:hidden block">
+          <HiMenuAlt1
+            size={24}
+            onClick={() => setActiveResMenu(!activeResMenu)}
+          />
+          {activeResMenu && (
+            <ul
+              onClick={() => setActiveResMenu(false)}
+              className="h-fit p-2 bg-[#F5F6F6] absolute"
+            >
+              {navItems}
+            </ul>
+          )}
+        </nav>
         <nav>
-          <ul className="flex gap-5 items-center font-medium text-gray-700">
+          <ul className="md:flex gap-5 items-center font-medium text-gray-700 hidden">
             {navItems}
           </ul>
         </nav>
-        <div className="relative">
+        <div className="relative md:block hidden">
           <input
             type="text"
             placeholder="Search Product"

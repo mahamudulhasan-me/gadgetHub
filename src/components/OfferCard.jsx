@@ -3,11 +3,11 @@ import { FaPhoneAlt } from "react-icons/fa";
 const OfferCard = () => {
   return (
     <div className=" px-[10%] flex justify-between items-center bg-primaryColor text-white py-1">
-      <p className=" flex items-center gap-1">
+      <p className=" md:flex items-center gap-1 hidden">
         <FaPhoneAlt /> +8801710142370
       </p>
       <p>Get 50% off on selected items | Shop Now</p>
-      <div className="flex items-center gap-3">
+      <div className="md:flex items-center gap-3 hidden">
         <select name="language" id="" className="bg-transparent outline-none ">
           <option value="english" className="text-gray-700">
             Eng

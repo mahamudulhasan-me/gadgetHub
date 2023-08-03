@@ -49,10 +49,10 @@ const SingleProduct = () => {
         electronics / audio / shop headphones by type /
         <span className="text-gray-700 font-medium">{title}</span>
       </p>
-      <div className="grid grid-cols-2 mt-5 gap-14">
+      <div className="md:grid grid-cols-2 mt-5 gap-14">
         <figure>
           <img
-            className="h-96 w-full"
+            className="h-96  w-full"
             src={displayImage ? displayImage : thumbnail}
             alt=""
           />
