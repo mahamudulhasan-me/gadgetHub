@@ -10,8 +10,15 @@ h1 {
   @apply text-gray-700 font-medium;
 }
 .color-pallet img {
-  @apply rounded-full border-2 hover:border-primaryColor;
+  @apply rounded-full border-2 hover:border-p1;
 }
 .mobile li {
   @apply text-gray-500 hover:underline hover:ml-2 transition-all;
+}
+
+.signInUp-input {
+  @apply w-full border-b-2 py-2 transition-all  focus:transition-all text-lg focus:border-p1 outline-none;
+}
+.socialLogin {
+  @apply flex gap-2 px-5 py-2  rounded-lg font-semibold items-center justify-center;
 }

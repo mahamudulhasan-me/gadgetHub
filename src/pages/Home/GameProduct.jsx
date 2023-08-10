@@ -17,7 +17,7 @@ const GameProduct = () => {
     <section className="bg-[#F8F8F8] px-[10%] py-10">
       <div className="flex items-center justify-between">
         <h1 className="text-2xl my-5">Gamer World</h1>
-        <Link className="bg-primaryColor rounded-3xl text-white px-4 py-2 font-medium hover:opacity-90 flex items-center gap-1">
+        <Link className="bg-p1 rounded-3xl text-white px-4 py-2 font-medium hover:opacity-90 flex items-center gap-1">
           View More <HiArrowRight className="animate-pulse" />
         </Link>
       </div>

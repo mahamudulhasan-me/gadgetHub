@@ -44,8 +44,7 @@ const ProductCard = ({ product }) => {
 
       <div>
         <h1 className="flex font-semibold justify-between gap-1">
-          <span>{title}</span>{" "}
-          <span className="text-primaryColor">${price}</span>
+          <span>{title}</span> <span className="text-p1">${price}</span>
         </h1>
         <p className="text-sm">{short_features}</p>
         <p className="flex">
@@ -61,7 +60,7 @@ const ProductCard = ({ product }) => {
 
       <Link
         to={`/product/${id}`}
-        className="border-2 hover:bg-primaryColor rounded-3xl ring-gray-500 px-3 py-1 text-gray-700 font-medium hover:text-white  transition-all hover:duration-300"
+        className="border-2 hover:bg-p1 rounded-3xl ring-gray-500 px-3 py-1 text-gray-700 font-medium hover:text-white  transition-all hover:duration-300"
       >
         Add to Cart
       </Link>

@@ -2,7 +2,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 const OfferCard = () => {
   return (
-    <div className=" px-[10%] flex justify-between items-center bg-primaryColor text-white py-1">
+    <div className=" px-[10%] flex justify-between items-center bg-p1 text-white py-1">
       <p className=" md:flex items-center gap-1 hidden">
         <FaPhoneAlt /> +8801710142370
       </p>

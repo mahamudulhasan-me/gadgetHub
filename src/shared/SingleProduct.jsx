@@ -117,10 +117,10 @@ const SingleProduct = () => {
             </p>
           </div>
           <div className="grid grid-cols-2 gap-6   items-center">
-            <button className="border-2 border-primaryColor rounded-3xl py-2 font-semibold bg-primaryColor text-white ">
+            <button className="border-2 border-p1 rounded-3xl py-2 font-semibold bg-p1 text-white ">
               Buy Now
             </button>
-            <button className="border-2 border-primaryColor rounded-3xl py-2 font-semibold text-primaryColor">
+            <button className="border-2 border-p1 rounded-3xl py-2 font-semibold text-p1">
               Add to Cart
             </button>
           </div>

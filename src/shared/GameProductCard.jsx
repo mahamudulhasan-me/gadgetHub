@@ -41,10 +41,10 @@ const GameProductCard = ({ product }) => {
         <p className="font-medium text-gray-700">{title.slice(0, 50)}...</p>
         <h1 className="text-2xl font-medium">
           <del>${price}</del>
-          <span className="text-primaryColor">${parseInt(price - 10)}</span>
+          <span className="text-p1">${parseInt(price - 10)}</span>
         </h1>
       </div>
-      <button className="group-hover:bottom-0 transition-all duration-300 absolute -bottom-20 left-5 right-5  bg-primaryColor text-white py-2">
+      <button className="group-hover:bottom-0 transition-all duration-300 absolute -bottom-20 left-5 right-5  bg-p1 text-white py-2">
         Add to Cart
       </button>
     </div>

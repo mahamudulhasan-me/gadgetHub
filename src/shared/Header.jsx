@@ -29,13 +29,11 @@ const Header = () => {
     </>
   );
   return (
-    <header className="w-4/5 mx-auto  py-5  border-b border-[#FBF0E4]">
+    <header className="w-4/5 mx-auto  py-2  border-b border-[#FBF0E4]">
       <div className="flex justify-between items-center ">
         <Link to={"/"} className="md:flex hidden items-center gap-2">
           <img className="w-16 " src={logo} alt="" />{" "}
-          <h1 className="text-primaryColor font-semibold text-3xl ">
-            ShopCard
-          </h1>
+          <h1 className="text-p1 font-semibold text-3xl ">GadgetHub</h1>
         </Link>
         {/* responsive menu  */}
         <nav className="relative md:hidden block">
@@ -62,13 +60,13 @@ const Header = () => {
             type="text"
             placeholder="Search Product"
             className="bg-[#F6F7F8] rounded-md px-2 py-1 placeholder-slate-700 
-            outline-none focus:outline-primaryColor focus:outline-none "
+            outline-none focus:outline-p1 focus:outline-none "
           />
           <FaSearch className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-700" />
         </div>
         <div className="flex items-center gap-6 font-medium text-gray-700">
-          <Link className="flex items-center gap-1">
-            <FaUser size={20} /> Account
+          <Link className="flex items-center gap-1" to={"/signIn"}>
+            <FaUser size={20} /> SignIn
           </Link>
           <Link className="flex items-center gap-1">
             <FaCartPlus size={20} /> Cart
