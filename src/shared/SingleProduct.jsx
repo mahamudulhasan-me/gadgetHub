@@ -1,18 +1,18 @@
 import { Rating, ThinStar } from "@smastrom/react-rating";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { FaCarSide, FaSyncAlt } from "react-icons/fa";
 import { HiOutlineMinus, HiPlus } from "react-icons/hi";
-import { useParams } from "react-router";
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import color1 from "../assets/color-pallet/circle.png";
 import color2 from "../assets/color-pallet/circle2.png";
 import color3 from "../assets/color-pallet/new-moon.png";
 import color4 from "../assets/color-pallet/round-shape.png";
 
 const SingleProduct = () => {
-  const { id } = useParams();
-  const [product, setProduct] = useState({});
+  const product = useLoaderData();
   const [selectedCount, setSelectedCount] = useState(0);
+  const [cart, setCart] = useState([]);
+
   const {
     title,
     short_features,
@@ -21,28 +21,20 @@ const SingleProduct = () => {
     total_rating,
     short_description,
     thumbnail,
-    category,
     images,
     stock_quantity,
   } = product;
   const [displayImage, setDisplayImage] = useState(thumbnail);
-
-  console.log(product);
-  useEffect(() => {
-    fetch("../productData.json")
-      .then((res) => res.json())
-      .then((data) => {
-        data.filter((product) =>
-          product.id === id ? setProduct(product) : null
-        );
-      });
-  }, []);
-
   const myStyles = {
     itemShapes: ThinStar,
     activeFillColor: "#003D2A",
     inactiveFillColor: "#BCEDC5",
   };
+
+  const addToCart = async (product) => {
+    setCart([...cart, product]);
+  };
+
   return (
     <div className="w-4/5 mx-auto mt-8">
       <p className="text-gray-600">
@@ -120,7 +112,10 @@ const SingleProduct = () => {
             <button className="border-2 border-p1 rounded-3xl py-2 font-semibold bg-p1 text-white ">
               Buy Now
             </button>
-            <button className="border-2 border-p1 rounded-3xl py-2 font-semibold text-p1">
+            <button
+              onClick={() => addToCart(product)}
+              className="border-2 border-p1 rounded-3xl py-2 font-semibold text-p1"
+            >
               Add to Cart
             </button>
           </div>

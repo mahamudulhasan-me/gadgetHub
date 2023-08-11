@@ -6,14 +6,13 @@ import { Link } from "react-router-dom";
 const ProductCard = ({ product }) => {
   const [favorite, setFavorite] = useState(false);
   const {
-    id,
+    _id,
     short_features,
     title,
     price,
     rating,
     total_rating,
-    description,
-    category,
+
     thumbnail,
   } = product;
   const myStyles = {
@@ -59,7 +58,7 @@ const ProductCard = ({ product }) => {
       </div>
 
       <Link
-        to={`/product/${id}`}
+        to={`/product/${_id}`}
         className="border-2 hover:bg-p1 rounded-3xl ring-gray-500 px-3 py-1 text-gray-700 font-medium hover:text-white  transition-all hover:duration-300"
       >
         Add to Cart

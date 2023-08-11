@@ -1,6 +1,5 @@
 [
   {
-    "id": "g1",
     "title": "Xoggle aute et pariatur adipisicing nostrud et excepteur",
     "price": 79.99,
     "thumbnail": "./img/product-img-1.jpg",
@@ -9,7 +8,6 @@
     "stock_quantity": 25
   },
   {
-    "id": "g2",
     "title": "Geeky ipsum esse repreh est consequat",
     "price": 66.99,
     "thumbnail": "./img/product-img-2.jpg",
@@ -18,7 +16,6 @@
     "stock_quantity": 25
   },
   {
-    "id": "g3",
     "title": "Conjurica ea magna eiusmod esse cupt anim aliquip",
     "price": 80.99,
     "thumbnail": "./img/product-img-3.jpg",

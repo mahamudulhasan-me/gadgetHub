@@ -5,6 +5,7 @@ import Header from "../shared/Header";
 const Main = () => {
   const location = useLocation();
   const offer = true;
+
   return (
     <div>
       {location.pathname === "/" && offer && <OfferCard />}

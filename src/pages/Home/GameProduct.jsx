@@ -3,16 +3,19 @@ import { HiArrowRight, HiChevronRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import gameSiteImg from "../../assets/section-category-1.jpg";
 import GameProductCard from "../../shared/GameProductCard";
+
 const GameProduct = () => {
   const [gameProducts, setGameProducts] = useState([]);
 
+  // fetch all game product from db
   useEffect(() => {
-    fetch("../gameWorld.json")
+    fetch("http://localhost:3000/gameProducts")
       .then((res) => res.json())
       .then((data) => {
         setGameProducts(data);
       });
   }, []);
+
   return (
     <section className="bg-[#F8F8F8] px-[10%] py-10">
       <div className="flex items-center justify-between">
@@ -37,8 +40,9 @@ const GameProduct = () => {
           </div>
         </figure>
         <div className="md:grid grid-cols-3 w-full gap-8 space-y-4 md:space-y-0">
+          {/* mapping all game product and pass data on GameProductCard */}
           {gameProducts.map((product) => (
-            <GameProductCard product={product} key={product.id} />
+            <GameProductCard product={product} key={product._id} />
           ))}
         </div>
       </div>

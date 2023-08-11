@@ -4,12 +4,15 @@ import { FaRegHeart } from "react-icons/fa";
 import { HiOutlineArrowsExpand, HiOutlineRefresh } from "react-icons/hi";
 
 const GameProductCard = ({ product }) => {
-  const { title, thumbnail, price, rating, stock_quantity, popular } = product;
+  const { _id, title, thumbnail, price, rating, stock_quantity, popular } =
+    product;
   const myStyles = {
     itemShapes: ThinStar,
     activeFillColor: "#003D2A",
     inactiveFillColor: "#BCEDC5",
   };
+
+  const addToCart = (id) => {};
   return (
     <div className="relative group overflow-hidden bg-white flex flex-col justify-between">
       {popular && (
@@ -44,7 +47,10 @@ const GameProductCard = ({ product }) => {
           <span className="text-p1">${parseInt(price - 10)}</span>
         </h1>
       </div>
-      <button className="group-hover:bottom-0 transition-all duration-300 absolute -bottom-20 left-5 right-5  bg-p1 text-white py-2">
+      <button
+        onClick={() => addToCart(_id)}
+        className="group-hover:bottom-0 transition-all duration-300 absolute -bottom-20 left-5 right-5  bg-p1 text-white py-2"
+      >
         Add to Cart
       </button>
     </div>

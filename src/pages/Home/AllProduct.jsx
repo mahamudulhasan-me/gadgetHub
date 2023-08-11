@@ -9,7 +9,7 @@ const AllProduct = () => {
 
   // fetch data from public
   useEffect(() => {
-    fetch(`productData.json`)
+    fetch(`http://localhost:3000/products`)
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
@@ -146,7 +146,7 @@ const AllProduct = () => {
 
       <div className="md:grid grid-cols-4 gap-6 space-y-4 md:space-y-0">
         {products.map((product) => (
-          <ProductCard product={product} key={product.id} />
+          <ProductCard product={product} key={product._id} />
         ))}
       </div>
       {/* see more button   */}

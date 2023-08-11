@@ -1,6 +1,5 @@
 [
   {
-    "id": "h1",
     "title": "Wireless Over-Ear Headphones",
     "price": 79.99,
     "thumbnail": "https://i.ibb.co/VT94Vks/pink-headphones-wireless-digital-device.jpg",
@@ -18,7 +17,6 @@
     ]
   },
   {
-    "id": "h11",
     "title": "Open-Back Audiophile Headphones",
     "price": 199.99,
     "thumbnail": "https://i.ibb.co/TW0Nwb8/black-wireless-earbud-with-charging-case.jpg",
@@ -37,7 +35,6 @@
   },
 
   {
-    "id": "h6",
     "title": "Wireless On-Ear Headphones",
     "price": 89.99,
     "thumbnail": "https://i.ibb.co/sqyRzwq/jordi-zamora-XNvt8-Ts-XOho-unsplash.jpg",
@@ -55,7 +52,6 @@
     ]
   },
   {
-    "id": "h7",
     "title": "Bass-Boosting Headphones",
     "price": 49.99,
     "thumbnail": "https://i.ibb.co/3dcmqMm/c-d-x-PDX-a-82obo-unsplash.jpg",
@@ -73,7 +69,6 @@
     ]
   },
   {
-    "id": "h3",
     "title": "On-Ear Hi-Fi Headphones",
     "price": 129.99,
     "thumbnail": "https://i.ibb.co/rQm3NhJ/cool-earphones-with-blue-background.jpg",
@@ -91,7 +86,6 @@
     ]
   },
   {
-    "id": "h4",
     "title": "Noise-Cancelling Earbuds",
     "price": 89.99,
     "thumbnail": "https://i.ibb.co/bb8r3fp/29171494-m506t0001-earbuds-12june22-03.jpg",
@@ -109,7 +103,6 @@
     ]
   },
   {
-    "id": "h5",
     "title": "Gaming Headset",
     "price": 69.99,
     "thumbnail": "https://i.ibb.co/vkyKW3z/black-headphones-digital-device.jpg",
@@ -128,7 +121,6 @@
   },
 
   {
-    "id": "h8",
     "title": "True Wireless Earbuds",
     "price": 129.99,
     "thumbnail": "https://i.ibb.co/pdjZm64/earphones-with-case-surrounded-by-nature-scene.jpg",
@@ -146,7 +138,6 @@
     ]
   },
   {
-    "id": "h9",
     "title": "Studio Monitor Headphones",
     "price": 149.99,
     "thumbnail": "https://i.ibb.co/BqBJ4ns/working-process-night-musician-is-creating-music-night.jpg",
@@ -164,7 +155,6 @@
     ]
   },
   {
-    "id": "h10",
     "title": "Wireless Neckband Earphones",
     "price": 59.99,
     "thumbnail": "https://i.ibb.co/Vx6WbP7/wireless-earphones-smartphone-cup-coffee.jpg",
@@ -182,7 +172,6 @@
     ]
   },
   {
-    "id": "h2",
     "title": "In-Ear Sports Earbuds",
     "price": 39.99,
     "thumbnail": "https://i.ibb.co/fpr23z3/closeup-shot-white-wireless-headphones-with-their-case-white-background.jpg",
@@ -201,7 +190,6 @@
   },
 
   {
-    "id": "h12",
     "title": "Sports Wireless Earbuds",
     "price": 44.99,
     "thumbnail": "https://i.ibb.co/hss09mc/wireless-inear-headphones-with-case-pink-background-flat-lay.jpg",
