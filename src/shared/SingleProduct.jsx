@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { FaCarSide, FaSyncAlt } from "react-icons/fa";
 import { HiOutlineMinus, HiPlus } from "react-icons/hi";
 import { Link, useLoaderData } from "react-router-dom";
+import { toast } from "react-toastify";
+import useCartProducts from "../Hooks/useCartProducts";
 import color1 from "../assets/color-pallet/circle.png";
 import color2 from "../assets/color-pallet/circle2.png";
 import color3 from "../assets/color-pallet/new-moon.png";
@@ -10,10 +12,11 @@ import color4 from "../assets/color-pallet/round-shape.png";
 
 const SingleProduct = () => {
   const product = useLoaderData();
-  const [selectedCount, setSelectedCount] = useState(0);
-  const [cart, setCart] = useState([]);
+  const [quantity, setQuantity] = useState(0);
+  const [cartProducts, refetch, isLoading] = useCartProducts();
 
   const {
+    _id,
     title,
     short_features,
     price,
@@ -31,8 +34,35 @@ const SingleProduct = () => {
     inactiveFillColor: "#BCEDC5",
   };
 
-  const addToCart = async (product) => {
-    setCart([...cart, product]);
+  const addToCart = (id) => {
+    const cartItem = {
+      productId: _id,
+      title,
+      thumbnail,
+      price,
+      quantity,
+      totalPrice: quantity * price,
+    };
+    const isProductExistInCart = cartProducts.find(
+      (product) => product.productId === id
+    );
+    if (isProductExistInCart) {
+      toast.warning("Product already exist in cart");
+    } else {
+      fetch(`http://localhost:3000/addCart`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(cartItem),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.insertedId) {
+            toast.success(`${title} add to cart`);
+          }
+        });
+    }
   };
 
   return (
@@ -94,12 +124,9 @@ const SingleProduct = () => {
           <div className="flex justify-start gap-8 font-medium text-gray-600">
             <p className="flex gap-5 items-center  bg-[#F5F6F6] text-xl px-5 py-1 rounded-3xl cursor-pointer">
               <HiOutlineMinus
-                onClick={() =>
-                  selectedCount && setSelectedCount(selectedCount - 1)
-                }
+                onClick={() => quantity && setQuantity(quantity - 1)}
               />
-              {selectedCount}{" "}
-              <HiPlus onClick={() => setSelectedCount(selectedCount + 1)} />
+              {quantity} <HiPlus onClick={() => setQuantity(quantity + 1)} />
             </p>
             <p>
               Only{" "}
@@ -113,7 +140,8 @@ const SingleProduct = () => {
               Buy Now
             </button>
             <button
-              onClick={() => addToCart(product)}
+              disabled={quantity === 0}
+              onClick={() => addToCart(_id)}
               className="border-2 border-p1 rounded-3xl py-2 font-semibold text-p1"
             >
               Add to Cart

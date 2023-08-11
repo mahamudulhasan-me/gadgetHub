@@ -3,7 +3,7 @@ import React from "react";
 import { FaRegHeart } from "react-icons/fa";
 import { HiOutlineArrowsExpand, HiOutlineRefresh } from "react-icons/hi";
 import { toast } from "react-toastify";
-import useCartProducts from "../useHooks/useCartProducts";
+import useCartProducts from "../Hooks/useCartProducts";
 
 const GameProductCard = ({ product }) => {
   const { _id, title, thumbnail, price, rating, stock_quantity, popular } =

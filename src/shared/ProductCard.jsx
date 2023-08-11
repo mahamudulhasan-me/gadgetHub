@@ -2,21 +2,12 @@ import { Rating, ThinStar } from "@smastrom/react-rating";
 import { useState } from "react";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import useCartProducts from "../useHooks/useCartProducts";
 
 const ProductCard = ({ product }) => {
   const [favorite, setFavorite] = useState(false);
-  
-  const {
-    _id,
-    short_features,
-    title,
-    price,
-    rating,
-    total_rating,
 
-    thumbnail,
-  } = product;
+  const { _id, short_features, title, price, rating, total_rating, thumbnail } =
+    product;
   const myStyles = {
     itemShapes: ThinStar,
     activeFillColor: "#003D2A",
