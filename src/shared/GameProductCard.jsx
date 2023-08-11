@@ -2,17 +2,31 @@ import { Rating, ThinStar } from "@smastrom/react-rating";
 import React from "react";
 import { FaRegHeart } from "react-icons/fa";
 import { HiOutlineArrowsExpand, HiOutlineRefresh } from "react-icons/hi";
+import { toast } from "react-toastify";
+import useCartProducts from "../useHooks/useCartProducts";
 
 const GameProductCard = ({ product }) => {
   const { _id, title, thumbnail, price, rating, stock_quantity, popular } =
     product;
+  const [cartProducts] = useCartProducts();
   const myStyles = {
     itemShapes: ThinStar,
     activeFillColor: "#003D2A",
     inactiveFillColor: "#BCEDC5",
   };
 
-  const addToCart = (id) => {};
+  const addToCart = (id) => {
+    console.log({ cartProducts });
+    const isProductExistInCart = cartProducts.find(
+      (product) => product._id === id
+    );
+    if (true) {
+      toast.warning("Product already exist in cart");
+    } else {
+      console.log(id);
+    }
+    console.log({ isProductExistInCart });
+  };
   return (
     <div className="relative group overflow-hidden bg-white flex flex-col justify-between">
       {popular && (

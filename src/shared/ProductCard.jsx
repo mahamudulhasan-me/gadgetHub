@@ -2,9 +2,11 @@ import { Rating, ThinStar } from "@smastrom/react-rating";
 import { useState } from "react";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import useCartProducts from "../useHooks/useCartProducts";
 
 const ProductCard = ({ product }) => {
   const [favorite, setFavorite] = useState(false);
+  
   const {
     _id,
     short_features,
