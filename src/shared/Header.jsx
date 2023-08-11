@@ -2,9 +2,14 @@ import { useState } from "react";
 import { FaCartPlus, FaSearch, FaUser } from "react-icons/fa";
 import { HiMenuAlt1 } from "react-icons/hi";
 import { Link } from "react-router-dom";
+import useCartProducts from "../Hooks/useCartProducts";
 import logo from "../assets/logo.png";
+import Cart from "./Cart/Cart";
+
 const Header = () => {
   const [activeResMenu, setActiveResMenu] = useState(false);
+  const [openCart, setOpenCart] = useState(false);
+  const [cartProducts] = useCartProducts();
   const navItems = (
     <>
       <li>
@@ -68,11 +73,20 @@ const Header = () => {
           <Link className="flex items-center gap-1" to={"/signIn"}>
             <FaUser size={20} /> SignIn
           </Link>
-          <Link className="flex items-center gap-1">
+          <button
+            onClick={() => setOpenCart(!openCart)}
+            className="flex items-center gap-1 relative"
+          >
+            <div className="absolute -top-4 -right-4 text-white font-semibold rounded-t-xl rounded-r-xl bg-p1 w-6 h-6 ">
+              {cartProducts?.length}
+            </div>
             <FaCartPlus size={20} /> Cart
-          </Link>
+          </button>
         </div>
       </div>
+      <aside className="absolute right-0 bg-slate-100 mt-2 z-50 h-screen overflow-y-scroll">
+        {openCart && <Cart />}
+      </aside>
     </header>
   );
 };

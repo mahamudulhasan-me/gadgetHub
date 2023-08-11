@@ -12,7 +12,7 @@ import color4 from "../assets/color-pallet/round-shape.png";
 
 const SingleProduct = () => {
   const product = useLoaderData();
-  const [quantity, setQuantity] = useState(0);
+  const [quantity, setQuantity] = useState(1);
   const [cartProducts, refetch, isLoading] = useCartProducts();
 
   const {
