@@ -60,6 +60,7 @@ const SingleProduct = () => {
         .then((data) => {
           if (data.insertedId) {
             toast.success(`${title} add to cart`);
+            refetch();
           }
         });
     }

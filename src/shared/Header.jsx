@@ -84,8 +84,12 @@ const Header = () => {
           </button>
         </div>
       </div>
-      <aside className="absolute right-0 bg-slate-100 mt-2 z-50 h-screen overflow-y-scroll">
-        {openCart && <Cart />}
+      <aside
+        className={`absolute right-0  ${
+          openCart ? "translate-x-0" : "translate-x-full"
+        } transition-all duration-300 bg-[#F9F5F6] mt-2 z-50 max-h-[calc(100vh-4rem)] overflow-y-scroll`}
+      >
+        <Cart />
       </aside>
     </header>
   );
