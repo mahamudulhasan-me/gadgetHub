@@ -7,8 +7,8 @@ import MenuBar from "../dashboard/MenuBar";
 
 const DashboardLayout = () => {
   return (
-    <div className="grid grid-cols-10">
-      <menu className="col-span-2 bg-[#111C43] min-h-screen ">
+    <div className="grid grid-cols-10 relative">
+      <menu className=" col-span-2  bg-[#111C43] min-h-screen ">
         <Link
           to={"/"}
           className="md:flex justify-center items-center gap-2 py-3 border-b border-slate-500"
