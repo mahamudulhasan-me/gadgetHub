@@ -1,5 +1,11 @@
 import { useState } from "react";
-import { FaCartPlus, FaSearch, FaUser } from "react-icons/fa";
+import {
+  FaCartPlus,
+  FaChartBar,
+  FaSearch,
+  FaSignInAlt,
+  FaUser,
+} from "react-icons/fa";
 import { HiMenuAlt1 } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import useCartProducts from "../Hooks/useCartProducts";
@@ -70,14 +76,30 @@ const Header = () => {
           <FaSearch className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-700" />
         </div>
         <div className="flex items-center gap-6 font-medium text-gray-700">
-          <Link className="flex items-center gap-1" to={"/signIn"}>
-            <FaUser size={20} /> SignIn
-          </Link>
+          <div className="relative  group">
+            <button className="flex items-center gap-1 ">
+              <FaUser size={20} /> Account
+            </button>
+            <div className="absolute  flex flex-col gap-2  -translate-y-48   pt-3 pb-8 group-hover:translate-y-0">
+              <Link
+                to={"/dashboard"}
+                className="flex items-center gap-1 text-p1 font-semibold"
+              >
+                <FaChartBar /> Dashboard
+              </Link>
+              <Link
+                to={"/signIn"}
+                className="flex items-center gap-1 text-p1 font-semibold"
+              >
+                <FaSignInAlt /> SignIn
+              </Link>
+            </div>
+          </div>
           <button
             onClick={() => setOpenCart(!openCart)}
             className="flex items-center gap-1 relative"
           >
-            <div className="absolute -top-4 -right-4 text-white font-semibold rounded-t-xl rounded-r-xl bg-p1 w-6 h-6 ">
+            <div className="absolute -top-4 -right-4  text-white font-semibold rounded-t-xl rounded-r-xl bg-p1 w-6 h-6 ">
               {cartProducts?.length}
             </div>
             <FaCartPlus size={20} /> Cart
@@ -89,7 +111,7 @@ const Header = () => {
           openCart ? "translate-x-0" : "translate-x-full"
         } transition-all duration-300 bg-[#F9F5F6] mt-2 z-50 max-h-[calc(100vh-4rem)] overflow-y-scroll`}
       >
-        <Cart />
+        {openCart && <Cart />}
       </aside>
     </header>
   );
