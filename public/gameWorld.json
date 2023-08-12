@@ -1,27 +1,134 @@
-[
-  {
-    "title": "Xoggle aute et pariatur adipisicing nostrud et excepteur",
-    "price": 79.99,
-    "thumbnail": "./img/product-img-1.jpg",
-    "rating": 4.5,
-    "total_rating": 120,
-    "stock_quantity": 25
-  },
-  {
-    "title": "Geeky ipsum esse repreh est consequat",
-    "price": 66.99,
-    "thumbnail": "./img/product-img-2.jpg",
-    "rating": 4,
-    "total_rating": 129,
-    "stock_quantity": 25
-  },
-  {
-    "title": "Conjurica ea magna eiusmod esse cupt anim aliquip",
-    "price": 80.99,
-    "thumbnail": "./img/product-img-3.jpg",
-    "rating": 5,
-    "total_rating": 150,
-    "stock_quantity": 10,
-    "popular": "yes"
-  }
-]
+{
+  "customers": [
+    {
+      "name": "John Smith",
+      "email": "john.smith@example.com",
+      "phone": "+1 123-456-7890",
+      "address": {
+        "street": "123 Main St",
+        "city": "Springfield",
+        "state": "IL",
+        "zip": "12345",
+        "country": "USA"
+      },
+      "picture": "https://example.com/john_smith.jpg"
+    },
+    {
+      "name": "Emily Johnson",
+      "email": "emily.johnson@example.com",
+      "phone": "+44 20 1234 5678",
+      "address": {
+        "street": "456 Elm Ave",
+        "city": "London",
+        "state": "",
+        "zip": "SW1A 1AA",
+        "country": "UK"
+      },
+      "picture": "https://example.com/emily_johnson.jpg"
+    },
+    {
+      "name": "Carlos Ramirez",
+      "email": "carlos.ramirez@example.com",
+      "phone": "+52 55 9876 5432",
+      "address": {
+        "street": "789 Oak Rd",
+        "city": "Mexico City",
+        "state": "CMX",
+        "zip": "12345",
+        "country": "Mexico"
+      },
+      "picture": "https://example.com/carlos_ramirez.jpg"
+    },
+    {
+      "name": "Linda Anderson",
+      "email": "linda.anderson@example.com",
+      "phone": "+1 555-123-4567",
+      "address": {
+        "street": "567 Pine Lane",
+        "city": "New York",
+        "state": "NY",
+        "zip": "10001",
+        "country": "USA"
+      },
+      "picture": "https://example.com/linda_anderson.jpg"
+    },
+    {
+      "name": "Sophie Martin",
+      "email": "sophie.martin@example.com",
+      "phone": "+33 1 23 45 67 89",
+      "address": {
+        "street": "789 Rue de la Paix",
+        "city": "Paris",
+        "state": "",
+        "zip": "75001",
+        "country": "France"
+      },
+      "picture": "https://example.com/sophie_martin.jpg"
+    },
+    {
+      "name": "Hiroshi Tanaka",
+      "email": "hiroshi.tanaka@example.com",
+      "phone": "+81 3 1234 5678",
+      "address": {
+        "street": "123 Sakura St",
+        "city": "Tokyo",
+        "state": "",
+        "zip": "123-4567",
+        "country": "Japan"
+      },
+      "picture": "https://example.com/hiroshi_tanaka.jpg"
+    },
+    {
+      "name": "Marta Gonzalez",
+      "email": "marta.gonzalez@example.com",
+      "phone": "+34 91 234 56 78",
+      "address": {
+        "street": "456 Calle Mayor",
+        "city": "Madrid",
+        "state": "",
+        "zip": "28001",
+        "country": "Spain"
+      },
+      "picture": "https://example.com/marta_gonzalez.jpg"
+    },
+    {
+      "name": "Alessandro Rossi",
+      "email": "alessandro.rossi@example.com",
+      "phone": "+39 02 1234 5678",
+      "address": {
+        "street": "789 Via Roma",
+        "city": "Milan",
+        "state": "",
+        "zip": "20121",
+        "country": "Italy"
+      },
+      "picture": "https://example.com/alessandro_rossi.jpg"
+    },
+    {
+      "name": "Anika Patel",
+      "email": "anika.patel@example.com",
+      "phone": "+91 22 1234 5678",
+      "address": {
+        "street": "123 Gandhi Road",
+        "city": "Mumbai",
+        "state": "MH",
+        "zip": "400001",
+        "country": "India"
+      },
+      "picture": "https://example.com/anika_patel.jpg"
+    },
+    {
+      "name": "Andrei Popov",
+      "email": "andrei.popov@example.com",
+      "phone": "+7 495 123-45-67",
+      "address": {
+        "street": "456 Red Square",
+        "city": "Moscow",
+        "state": "",
+        "zip": "101000",
+        "country": "Russia"
+      },
+      "picture": "https://example.com/andrei_popov.jpg"
+    }
+  ]
+}

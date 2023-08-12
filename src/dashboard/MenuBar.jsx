@@ -24,7 +24,10 @@ const MenuBar = () => {
           </Link>
         </li>
         <li className="hover:bg-[#1D284D] text-white py-2 px-4 rounded-lg">
-          <Link className="flex justify-between items-center">
+          <Link
+            to={"/dashboard/customers"}
+            className="flex justify-between items-center"
+          >
             <span className="flex items-center gap-2">
               <FaUserTie />
               Customers

@@ -23,9 +23,6 @@ h1 {
   @apply flex gap-2 px-5 py-2  rounded-lg font-semibold items-center justify-center;
 }
 
-.cartItem td {
-  @apply p-2;
-}
 .progress-bar {
   width: 5rem;
   height: 5rem;
