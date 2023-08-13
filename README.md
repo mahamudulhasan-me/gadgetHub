@@ -1,4 +1,4 @@
-# Project Name: Revolutionary-Reactor
+# Project Name: GadgetHub
 
 This is an eCommerce website.
 
@@ -19,9 +19,9 @@ This is an eCommerce website.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/mahamudulhasan-me/revolutionary-reactor.git
+   git clone https://github.com/mahamudulhasan-me/gadgetHub.git
 
-   cd revolutionary-reactor
+   cd gadgetHub
    yarn
 
    yarn dev
