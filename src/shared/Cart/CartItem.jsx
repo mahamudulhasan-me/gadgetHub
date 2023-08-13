@@ -12,7 +12,7 @@ const CartItem = ({ cartItem, index }) => {
 
   const handleDeleteCartItem = async (id) => {
     const res = await axios.delete(
-      `http://localhost:3000/cartItemDelete/${id}`
+      `https://gadgethub-server.vercel.app/cartItemDelete/${id}`
     );
     if (res.data.deletedCount > 0) {
       refetch();

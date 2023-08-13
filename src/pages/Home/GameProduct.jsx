@@ -9,7 +9,7 @@ const GameProduct = () => {
 
   // fetch all game product from db
   useEffect(() => {
-    fetch("http://localhost:3000/gameProducts")
+    fetch("https://gadgethub-server.vercel.app/gameProducts")
       .then((res) => res.json())
       .then((data) => {
         setGameProducts(data);

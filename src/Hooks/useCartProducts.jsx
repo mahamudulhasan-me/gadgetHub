@@ -8,7 +8,9 @@ const useCartProducts = () => {
   } = useQuery({
     queryKey: ["cartProducts"],
     queryFn: async () => {
-      const res = await fetch("http://localhost:3000/cartProducts");
+      const res = await fetch(
+        "https://gadgethub-server.vercel.app/cartProducts"
+      );
       const data = await res.json();
       return data;
     },

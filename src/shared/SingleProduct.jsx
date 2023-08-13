@@ -49,7 +49,7 @@ const SingleProduct = () => {
     if (isProductExistInCart) {
       toast.warning("Product already exist in cart");
     } else {
-      fetch(`http://localhost:3000/addCart`, {
+      fetch(`https://gadgethub-server.vercel.app/addCart`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

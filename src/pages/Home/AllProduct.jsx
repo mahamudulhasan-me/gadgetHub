@@ -9,7 +9,7 @@ const AllProduct = () => {
 
   // fetch data from public
   useEffect(() => {
-    fetch(`http://localhost:3000/products`)
+    fetch(`https://gadgethub-server.vercel.app/products`)
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);

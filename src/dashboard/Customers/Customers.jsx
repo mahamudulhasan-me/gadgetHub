@@ -14,7 +14,7 @@ const Customers = () => {
   } = useQuery({
     queryKey: ["customers"],
     queryFn: async () => {
-      const res = await fetch("http://localhost:3000/customers");
+      const res = await fetch("https://gadgethub-server.vercel.app/customers");
       const data = await res.json();
       return data;
     },
