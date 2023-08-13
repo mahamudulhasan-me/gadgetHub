@@ -1,38 +1,59 @@
-import React, { useEffect } from "react";
-
+import React from "react";
+import { FaEnvelope, FaPhoneSquareAlt } from "react-icons/fa";
+import { HiX } from "react-icons/hi";
+import coverPhoto from "../../assets/images/target-bg.png";
 const CustomerProfile = ({ isOpen, onClose, customer }) => {
-  useEffect(() => {
-    const handleCloseOnOutsideClick = (event) => {
-      if (isOpen && !event.target.closest(".modal-content")) {
-        onClose();
-      }
-    };
-
-    if (isOpen) {
-      document.addEventListener("mousedown", handleCloseOnOutsideClick);
-    }
-
-    return () => {
-      document.removeEventListener("mousedown", handleCloseOnOutsideClick);
-    };
-  }, [isOpen, onClose]);
+  const { name, email, phone, address, picture } = customer;
 
   if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center">
-      <div className="fixed inset-0 bg-black opacity-50"></div>
-      <div className="bg-white p-4 rounded-md shadow-md z-10">
+      <div className="fixed inset-0 bg-slate-900 opacity-70"></div>
+      <div className="bg-white relative p-4 rounded-md shadow-md z-10">
         <button
-          className="absolute top-2 right-2 text-gray-500"
+          className="absolute -top-5 -right-5 ring rounded-full text-rose-600"
           onClick={onClose}
         >
-          Close
+          <HiX className="text-2xl" />
         </button>
-        <h2 className="text-xl font-semibold mb-4">{customer.name}</h2>
-        <p>Email: {customer.email}</p>
-        <p>Phone: {customer.phone}</p>
-        {/* Add additional customer details here */}
+
+        <img src={coverPhoto} className="h-4/5" />
+
+        <div className="flex gap-5 pl-6">
+          <img
+            src={picture}
+            alt=""
+            className="w-20 h-20 rounded-full ring ring-violet-600 -mt-10"
+          />
+          <div className="text-left mt-4">
+            <h3 className="text-xl font-semibold">{name}</h3>
+            <p className="flex  items-center gap-1">
+              <FaPhoneSquareAlt /> {phone}
+            </p>
+            <p className="flex  items-center gap-1">
+              <FaEnvelope /> {email}
+            </p>
+          </div>
+        </div>
+        <div className="grid grid-cols-3 border-y divide-x mt-6 ">
+          <div className="p-4">
+            <h4 className="font-semibold">Member Since</h4>
+            <p>16 Months</p>
+          </div>
+          <div className="p-4">
+            <h4 className="font-semibold">Order</h4>
+            <p>10</p>
+          </div>
+          <div className="p-4">
+            <h4 className="font-semibold">Position</h4>
+            <p>Member</p>
+          </div>
+        </div>
+        <p className="my-2">
+          Address: {address?.street}, {address?.city}, {address?.state}-{" "}
+          {address?.zip}, {address?.country}
+        </p>
       </div>
     </div>
   );

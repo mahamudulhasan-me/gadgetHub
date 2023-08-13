@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { FaUserEdit } from "react-icons/fa";
+import { HiX } from "react-icons/hi";
 import CustomerProfile from "./CustomerProfile";
 
 const CustomerLi = ({ customer, index }) => {
@@ -22,10 +24,11 @@ const CustomerLi = ({ customer, index }) => {
       </td>
       <td>{phone}</td>
       <td>{email}</td>
-      <td>
-        <button className="bg-violet-400 px-2 py-1 rounded-lg text-white">
-          Action
+      <td className="flex gap-2 items-center justify-center text-2xl mb-3">
+        <button>
+          <HiX className="text-rose-600 mb-3 cursor-pointer" />
         </button>
+        <FaUserEdit className="text-orange-600 mb-3 cursor-pointer" />
       </td>
       <td>
         <button
