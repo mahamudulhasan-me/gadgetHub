@@ -7,17 +7,17 @@ const Cart = () => {
   const [cartProducts] = useCartProducts();
   const [quantity, setQuantity] = useState();
 
-  const subTotal = cartProducts?.map((item) => item.totalPrice);
+  const subTotal = cartProducts?.map((item) => item.totalPrice.toFixed(2));
   const shippingCharge = 0;
   return (
-    <div className="flex justify-between items-start">
+    <div className="md:flex justify-between items-start">
       <>
         {cartProducts?.length === 0 ? (
-          <div className="flex items-center  justify-center h-52 w-[30rem] font-semibold text-rose-600">
+          <div className="flex items-center  justify-center h-52 md:w-[30rem] font-semibold text-rose-600">
             <p>Your cart is empty</p>
           </div>
         ) : (
-          <table className="pr-4 min-w-[30rem]">
+          <table className="pr-4 md:min-w-[30rem]">
             <thead className="border-b w-fit h-10 ">
               <tr>
                 <td></td>
@@ -59,7 +59,9 @@ const Cart = () => {
         <div className="bg-[#AAC8A7] p-2">
           <p className="flex justify-between items-center font-semibold">
             <span>Total Payable Amount</span>{" "}
-            <span>${parseFloat(subTotal + shippingCharge || 0)}</span>
+            <span>
+              ${parseFloat(subTotal + shippingCharge || 0).toFixed(2)}
+            </span>
           </p>
         </div>
         <button className="bg-p1 w-full text-white py-2 uppercase font-semibold">

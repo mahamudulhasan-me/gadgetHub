@@ -32,7 +32,10 @@ const Customers = () => {
         <p className="border-l-4 font-semibold border-violet-700 px-1">
           All Customer
         </p>
-        <p onClick={addCustomer} className="bg-[#F0F1F7] p-2 rounded-md">
+        <p
+          onClick={addCustomer}
+          className="bg-[#F0F1F7] p-2 rounded-md cursor-pointer"
+        >
           <FaPlus />
         </p>
       </div>

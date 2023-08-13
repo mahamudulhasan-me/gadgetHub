@@ -18,6 +18,9 @@ const Header = () => {
   const [cartProducts] = useCartProducts();
   const navItems = (
     <>
+      <li className="md:hidden">
+        <Link to={"/"}>Home</Link>
+      </li>
       <li>
         <select name="category" id="" className="outline-none">
           <option>Category</option>
@@ -47,7 +50,7 @@ const Header = () => {
           <h1 className="text-p1 font-semibold text-3xl ">GadgetHub</h1>
         </Link>
         {/* responsive menu  */}
-        <nav className="relative md:hidden block">
+        <nav className="relative md:hidden block z-50">
           <HiMenuAlt1
             size={24}
             onClick={() => setActiveResMenu(!activeResMenu)}
@@ -80,7 +83,7 @@ const Header = () => {
             <button className="flex items-center gap-1 ">
               <FaUser size={20} /> Account
             </button>
-            <div className="absolute  flex flex-col gap-2  -translate-y-48   pt-3 pb-8 group-hover:translate-y-0">
+            <div className="absolute z-50 flex flex-col gap-2  -translate-y-48   pt-3 pb-8 group-hover:translate-y-0">
               <Link
                 to={"/dashboard"}
                 className="flex items-center gap-1 text-p1 font-semibold"
@@ -109,7 +112,7 @@ const Header = () => {
       <aside
         className={`absolute right-0  ${
           openCart ? "translate-x-0" : "translate-x-full"
-        } transition-all duration-300 bg-[#F9F5F6] mt-2 z-50 max-h-[calc(100vh-4rem)] overflow-y-scroll`}
+        } transition-all duration-300 bg-[#F9F5F6] mt-2 z-40 max-h-[calc(100vh-4rem)] overflow-y-scroll`}
       >
         {openCart && <Cart />}
       </aside>

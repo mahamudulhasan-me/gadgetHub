@@ -56,7 +56,7 @@ const MenuBar = () => {
       </ul>
       <ul className="mt-5 space-y-2">
         <li className="hover:bg-[#1D284D] text-white py-2 px-4 rounded-lg">
-          <Link className="flex justify-between items-center">
+          <Link to="/" className="flex justify-between items-center">
             <span className="flex items-center gap-2">
               <FaHome />
               Home

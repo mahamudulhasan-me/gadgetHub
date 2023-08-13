@@ -10,10 +10,10 @@ import SingleSummaryCard from "./SingleSummryCard/SingleSummaryCard";
 import TopDeals from "./TopDeals/TopDeals";
 const Dashboard = () => {
   return (
-    <div className="grid grid-cols-12 gap-5">
+    <div className="md:grid grid-cols-12 gap-5">
       <div className="col-span-8 w-full space-y-5">
         <ReviewAnalytics />
-        <div className="grid grid-cols-2 text-gray-600 gap-5">
+        <div className="md:grid grid-cols-2 text-gray-600 gap-5">
           <SingleSummaryCard
             icon={FaUsers}
             title="Total Customers"

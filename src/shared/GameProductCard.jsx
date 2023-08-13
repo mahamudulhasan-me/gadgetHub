@@ -8,7 +8,8 @@ import useCartProducts from "../Hooks/useCartProducts";
 const GameProductCard = ({ product }) => {
   const { _id, title, thumbnail, price, rating, stock_quantity, popular } =
     product;
-  const [cartProducts] = useCartProducts();
+  const [cartProducts, refetch] = useCartProducts();
+  const quantity = 1;
   const myStyles = {
     itemShapes: ThinStar,
     activeFillColor: "#003D2A",
@@ -16,16 +17,35 @@ const GameProductCard = ({ product }) => {
   };
 
   const addToCart = (id) => {
-    console.log({ cartProducts });
+    const cartItem = {
+      productId: _id,
+      title,
+      thumbnail,
+      price,
+      quantity,
+      totalPrice: quantity * price,
+    };
     const isProductExistInCart = cartProducts.find(
-      (product) => product._id === id
+      (product) => product.productId === id
     );
-    if (true) {
+    if (isProductExistInCart) {
       toast.warning("Product already exist in cart");
     } else {
-      console.log(id);
+      fetch(`http://localhost:3000/addCart`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(cartItem),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.insertedId) {
+            toast.success(`${title} add to cart`);
+            refetch();
+          }
+        });
     }
-    console.log({ isProductExistInCart });
   };
   return (
     <div className="relative group overflow-hidden bg-white flex flex-col justify-between">

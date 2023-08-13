@@ -54,7 +54,7 @@ const ProductCard = ({ product }) => {
         to={`/product/${_id}`}
         className="border-2 hover:bg-p1 rounded-3xl ring-gray-500 px-3 py-1 text-gray-700 font-medium hover:text-white  transition-all hover:duration-300"
       >
-        Add to Cart
+        View Details
       </Link>
     </div>
   );
