@@ -1,9 +1,11 @@
 import { useQuery } from "@tanstack/react-query";
-import React from "react";
+import React, { useState } from "react";
 import { FaPlus } from "react-icons/fa";
+import AddCustomer from "./AddCustomer";
 import CustomerLi from "./CustomerLi";
 
 const Customers = () => {
+  const [modalOpen, setModalOpen] = useState(false);
   const {
     data: customers,
     refetch,
@@ -16,17 +18,25 @@ const Customers = () => {
       return data;
     },
   });
-  console.log(customers);
+
+  const addCustomer = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
   return (
     <div className=" w-full bg-white rounded-md px-2">
       <div className="border-b p-2 flex items-center justify-between">
         <p className="border-l-4 font-semibold border-violet-700 px-1">
           All Customer
         </p>
-        <p className="bg-[#F0F1F7] p-2 rounded-md">
+        <p onClick={addCustomer} className="bg-[#F0F1F7] p-2 rounded-md">
           <FaPlus />
         </p>
       </div>
+      <AddCustomer isOpen={modalOpen} onClose={closeModal} />
       <table className="w-full h-fit text-gray-600 border-spacing-5 ">
         <thead>
           <tr>
