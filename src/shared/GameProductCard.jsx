@@ -48,7 +48,10 @@ const GameProductCard = ({ product }) => {
     }
   };
   return (
-    <div className="relative group overflow-hidden bg-white flex flex-col justify-between">
+    <div
+      data-aos="fade-left"
+      className="relative group overflow-hidden bg-white flex flex-col justify-between"
+    >
       {popular && (
         <p className="absolute bg-[#FF8C3A] text-white font-medium px-1 rounded-3xl">
           Popular

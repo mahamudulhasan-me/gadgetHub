@@ -1,5 +1,6 @@
 import "@smastrom/react-rating/style.css";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import "aos/dist/aos.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider } from "react-router-dom";

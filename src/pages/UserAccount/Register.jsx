@@ -58,9 +58,6 @@ const Register = ({ setSignInPage, signInPage }) => {
       <SectionHead>Sign Up For Free</SectionHead>
       <form
         data-aos="fade-left"
-        data-aos-anchor="#example-anchor"
-        data-aos-offset="500"
-        data-aos-duration="500"
         // onSubmit={registerUser}
         className="space-y-4 md:w-4/5"
       >

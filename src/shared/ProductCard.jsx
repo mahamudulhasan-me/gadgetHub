@@ -14,7 +14,10 @@ const ProductCard = ({ product }) => {
     inactiveFillColor: "#BCEDC5",
   };
   return (
-    <div className="relative bg-[#F5F6F6] text-gray-600 h-full flex flex-col justify-between items-start gap-3 rounded-lg">
+    <div
+      data-aos="zoom-in"
+      className="relative bg-[#F5F6F6] text-gray-600 h-full flex flex-col justify-between items-start gap-3 rounded-lg"
+    >
       <div
         className="absolute top-3 right-3 bg-white p-1 rounded-full cursor-pointer"
         onClick={() => setFavorite(!favorite)}

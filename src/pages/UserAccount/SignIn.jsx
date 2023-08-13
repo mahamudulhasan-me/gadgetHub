@@ -112,6 +112,7 @@ const SignIn = () => {
               <>
                 <SectionHead>Login to your Account</SectionHead>
                 <form
+                  data-aos="fade-left"
                   //   onSubmit={handleEmailPasswordSignIn}
                   className="space-y-4 md:w-4/5"
                 >

@@ -25,7 +25,12 @@ const GameProduct = () => {
         </Link>
       </div>
       <div className="md:flex justify-between items-center gap-8">
-        <figure className="relative">
+        <figure
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          className="relative"
+        >
           <img className="w-full mx-auto" src={gameSiteImg} alt="" />
           <div className="absolute top-0 left-0 w-full h-full p-5">
             <h1>Mobile & Tablet</h1>
